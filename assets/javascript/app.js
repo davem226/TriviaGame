@@ -1,11 +1,11 @@
 // Create array of questions
 questions = [
-    "Which biome type has the most number of species per unit area?",
-    "How many species of birds breed in Ohio?",
-    "Which team won the 2008 Stanley Cup?",
-    "Who was the starting goalie for the team that lost the 2008 Stanley Cup?",
-    "Which biome type covers the largest land area throughout the world?",
-    "In what year was the original Ninentendo Entertainment System released in the US?",
+    "About how much time passes in the show from the first to the last episode?",
+    "Walter White's sister-in-law is named",
+    "Hank works for what organization?",
+    "Gus Fring was born in which country?",
+    "Walt spends much of seasons 3 and 4 working in what kind of structure?",
+    "Which book serves as the catalyst of Walter's demise?",
 ];
 
 // Create object constructor for questions and answer choices
@@ -18,22 +18,26 @@ function Question(question, correct, wrongA, wrongB, wrongC) {
 }
 
 // Create each question as an object
-var one = new Question(questions[0], "Tropical Rainforest", "Boreal Forest", "African Savanna", "Tundra");
-var two = new Question(questions[1], 192, 26, 52, 598);
-var three = new Question(questions[2], "Detroit Red Wings", "Pittsburgh Penguins", "Toronto Maple Leafs", "New Jersey Devils");
-var four = new Question(questions[3], "Marc-Andre Fleury", "Patrick Roy", "Dominik Hasek", "Sidney Crosby");
-var five = new Question(questions[4], "Boreal Forest", "Tropical Rainforest", "Desert", "Temperate Deciduous Forest");
-var six = new Question(questions[5], 1986, 1983, 1988, 1993);
+var zero = new Question(questions[0], "2 years", "5 years", "6 years", "1 year");
+var one = new Question(questions[1], "Marie", "Skyler", "Claire", "Holly");
+var two = new Question(questions[2], "DEA", "APD", "FBI", "US Border Patrol");
+var three = new Question(questions[3], "Chile", "Mexico", "Columbia", "United States");
+var four = new Question(questions[4], "Laundry Facility", "High School", "RV", "Basement");
+var five = new Question(questions[5], "Leaves of Grass", "Advanced Organic Chemistry", "The Learn'd Astronomer", "The Life of Werner Heisenberg");
+
+// Create a startQuiz() function that
+$("#start").click(function() {
+    // Hide the start button div
+    this.hide();
+
+    // Sets score to zero before quiz start
+    let wins = 0; losses = 0; unanswered = 0;
+
+    // 
+});
 
 
-
-// Create a startGame() function that...
-//  generates click event for start button
-//  hides the start div
-//  executes the showQuestion() function
-
-// Create showQuestion(randNum) function that...
-//  takes a random number as an argument to render the next question randomly
+// Create changeQuestion() function that...
 //  creates a timer div...
 //      insert "Time Remaining: " into html
 //      insert countdown timer (30 seconds) into html
@@ -42,6 +46,8 @@ var six = new Question(questions[5], 1986, 1983, 1988, 1993);
 //  a choices div...
 //      insert correct and wrong answers randomly into html as p tags
 //  create click events for each answer choice
+
+// Create a endQuiz() function
 
 // Create a changeQuestion() function that...
 //  executes... 
