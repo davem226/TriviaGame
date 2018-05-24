@@ -1,0 +1,105 @@
+
+/* Insert background image */
+/* -------------------------------------------------------------------------------- */
+body, html {
+    height: 100%;
+    position: relative;
+}
+.bg {
+    /* The image used */
+    background-image: url("../media/bg-bb3.jpg");
+
+    /* Full height */
+    height: 1000px;; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* -------------------------------------------------------------------------------- */
+
+
+/* Style gif */
+/* -------------------------------------------------------------------------------- */
+#gif-box     {
+    /* Positioning */
+    width: 80%;
+    left: 10%;
+    top: 10%;
+    position: absolute;
+    height: 800px;;
+
+    /* Background gif  */
+    background-image: url("../media/bb-gif2.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+    
+    /* Default do not display */
+    display: none;
+}
+/* -------------------------------------------------------------------------------- */
+
+
+/* Style and position quiz box */
+/* -------------------------------------------------------------------------------- */
+#quiz {
+    /* Positioning */
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+
+    /* Style */
+    background-color: burlywood;
+    height: 100%;
+}
+/* -------------------------------------------------------------------------------- */
+
+
+/* Style quiz heading and start button */
+/* -------------------------------------------------------------------------------- */
+#heading {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    background-color: rgb(94, 52, 23);
+}
+
+#start{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 46px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: rgb(94, 52, 23);
+    text-align: center;
+}
+/* -------------------------------------------------------------------------------- */
+
+
+/* Position quiz heading and start button */
+/* -------------------------------------------------------------------------------- */
+#heading {
+    margin-top: 0;
+}
+
+#start {
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    bottom: 35%;
+}
+/* -------------------------------------------------------------------------------- */
+
+/* Stylize JavaScript divs containing Timer, Question, and Choices */
+/* -------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------- */

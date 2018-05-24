@@ -25,15 +25,24 @@ var three = new Question(questions[3], "Chile", "Mexico", "Columbia", "United St
 var four = new Question(questions[4], "Laundry Facility", "High School", "RV", "Basement");
 var five = new Question(questions[5], "Leaves of Grass", "Advanced Organic Chemistry", "The Learn'd Astronomer", "The Life of Werner Heisenberg");
 
-// Create a startQuiz() function that
+// Create a startQuiz() function
 $("#start").click(function() {
-    // Hide the start button div
-    this.hide();
+    // Hide quiz box
+    $("#quiz").hide();
 
-    // Sets score to zero before quiz start
+    // Play gif
+    $("#gif-box").show();
+
+    // Play audio -- * Note, URL is relative to HTML, not JS file * -- UGH!!
+    var theme = new Audio('assets/media/theme.mp3');
+    theme.play();
+
+    // After gif plays once, stop theme, hide gif, show quiz box, hide start button
+    
+
+    // Sets score to zero before start of quiz
     let wins = 0; losses = 0; unanswered = 0;
 
-    // 
 });
 
 
