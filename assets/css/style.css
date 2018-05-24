@@ -101,5 +101,29 @@ body, html {
 
 /* Stylize JavaScript divs containing Timer, Question, and Choices */
 /* -------------------------------------------------------------------------------- */
+#timer {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
 
+#question {
+    text-align: center;
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#choices {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+}
+
+p {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+}
 /* -------------------------------------------------------------------------------- */
